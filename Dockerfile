@@ -64,4 +64,4 @@ USER zeppelin
 WORKDIR ${ZEPPELIN_HOME}
 COPY entrypoint.sh .
 EXPOSE 9995
-CMD ["/bin/bash" , "/entrypoint.sh"]
+CMD ["/bin/bash" , "entrypoint.sh"]
