@@ -53,8 +53,9 @@ RUN echo "deb http://public-repo-1.hortonworks.com/HDP/debian7/2.x/updates/${HDP
     apt-key adv --keyserver keyserver.ubuntu.com --recv B9733A7A07513CAD
 
 RUN apt-get update && apt-get install -y -f \
-    libpostgresql-jdbc-java \
-    libmysql-java \
+    # libpostgresql-jdbc-java \
+    # libmysql-java \
+    spark2 \
     zeppelin \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
